@@ -18,6 +18,9 @@ keytool -keystore server.keystore.jks -alias localhost -validity 365 -genkey -ke
 CN=localhost, OU=localhost, O=localhost, L=Chennai, ST=TN, C=IN
 ```
 
+To See the file content
+keytool -list -v -keystore filename
+
 ## Generating CA
 
 - The below command will generate the ca cert(SSL cert) and private key. This is normally needed if we are self signing the request.
